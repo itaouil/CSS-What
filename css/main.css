@@ -1,0 +1,74 @@
+body {
+    /* Set size and family of the font */
+    font-size: 1em;
+    font-family: "Helvetica", sans-serif;
+
+    /* Space between lines */
+    line-height: 1.4;
+}
+
+.wrapper {
+    margin-left: 50px;
+}
+
+.nav-side {
+    /* Make position fixed */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Set size */
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+
+    /* Set colors */
+    color: #fff;
+    background-color: cornflowerblue;
+
+    /* Padding and box sizing */
+    padding: 20px;
+    box-sizing: border-box;
+
+    /* Make nav side not visible */
+    margin-left: -250px;
+
+    /* Add transitional effect */
+    transition: margin 200ms ease-in-out;
+}
+
+.nav-toggle {
+    /* Set position */
+    position: absolute;
+    top: 0;
+    right: -40px;
+
+    /* Set size */
+    width: 40px;
+    height: 40px;
+
+    /* Bg color and color set */
+    color: #fff;
+    background-color: cornflowerblue;
+
+    /* Line height and centering */
+    line-height: 40px;
+    text-align: center;
+
+    /* Get rid off anchor tag below decoration */
+    text-decoration: none;
+}
+
+.nav-toggle:before {
+    /* Set arrow */
+    content: "\2192";
+    font-weight: 600;
+}
+
+.nav-side.nav-open .nav-toggle:before {
+    content: "\2190";
+}
+
+.nav-side.nav-open {
+    margin-left: 0;
+}
