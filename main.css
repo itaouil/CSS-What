@@ -1,0 +1,30 @@
+html,
+body {
+    /* Reset any AS present by default in the browser */
+    margin: 0;
+
+    /* Set Size */
+    height: 100%;
+    width: 100%;
+
+    /* Display content as table */
+    display: table;
+}
+
+.wrapper {
+    /* Make space between content and container */
+    padding: 20px;
+
+    /* Set height, such that it is adaptable to content */
+    height: auto;
+}
+
+footer {
+    /* Set background color */
+    background-color: slategrey;
+
+    /* Make footer as a table row */
+    display:table-row;
+
+    height: 1px;
+}
